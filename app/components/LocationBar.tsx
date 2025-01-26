@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { MapPin } from "lucide-react"
 import { PinContainer } from "./PinContainer"
 
@@ -15,22 +16,29 @@ export default function LocationBar() {
 
           {/* Map Container */}
           <div className="relative h-[450px] w-full overflow-hidden rounded-xl border border-gray-700 bg-gray-900/50">
-            {/* Placeholder Map - Replace with actual map integration */}
-            <div className="absolute inset-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50">
-              <PinContainer
-                title="ParkEase Location"
-                href="#"
-                containerClassName="w-full h-full"
-                className="w-full h-full flex items-center justify-center"
-              >
-                <div className="flex flex-col items-center gap-4">
-                  <MapPin className="h-16 w-16 text-blue-400" />
-                  <div className="rounded-lg bg-gray-800/80 px-6 py-3 text-lg text-gray-100">
-                    123 Parking Avenue, City Center
+            <PinContainer
+              title="ParkEase Location"
+              href="#"
+              containerClassName="w-full h-full"
+              className="w-full h-full flex items-center justify-center"
+            >
+              <div className="relative w-full h-full">
+                <Image
+                  src="/map.png"
+                  alt="ParkEase Location Map"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+                <div className="absolute inset-0 bg-gray-900/50 flex items-center justify-center">
+                  <div className="flex flex-col items-center gap-4">
+                    <MapPin className="h-16 w-16 text-blue-400" />
+                    <div className="rounded-lg bg-gray-800/80 px-6 py-3 text-lg text-gray-100">
+                      123 Parking Avenue, City Center
+                    </div>
                   </div>
                 </div>
-              </PinContainer>
-            </div>
+              </div>
+            </PinContainer>
           </div>
 
           {/* Contact Information */}
