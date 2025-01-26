@@ -1,17 +1,23 @@
 "use client"
+
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
-import {TypewriterEffect} from "./TypewriterEffect"
+import { TypewriterEffect } from "./TypewriterEffect"
 
 export default function Hero() {
-  const words = ["Find Your Perfect Parking Spot", "Book in Seconds", "Park with Confidence", "Save Time and Money"]
+  const words = [
+    "Find Your Perfect Parking Spot",
+    "Book in Seconds",
+    "Park with Confidence",
+    "Save Time and Money",
+  ]
 
   return (
     <section className="relative py-24 md:py-32 bg-gray-900/30 backdrop-blur-sm">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl">
           <h1 className="mb-6 text-4xl font-bold leading-tight text-gray-100 md:text-6xl">
-            <TypewriterEffect 
+            <TypewriterEffect
               words={words}
               className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent"
               typingSpeed={50}
