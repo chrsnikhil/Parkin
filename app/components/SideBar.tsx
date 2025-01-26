@@ -40,7 +40,7 @@ export default function Sidebar() {
                 isExpanded ? "w-auto opacity-100" : "w-0 opacity-0"
               }`}
             >
-              ParkEase
+              Parkin
             </span>
           </Link>
         </div>

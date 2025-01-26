@@ -1,35 +1,35 @@
-import { Github, Linkedin, Mail, Twitter, Phone } from "lucide-react"
+import { Github, Linkedin, Mail, InstagramIcon, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function ContactUs() {
   const socialLinks = [
     {
       name: "WhatsApp",
-      href: "https://wa.me/1234567890", // Replace with actual WhatsApp number
+      href: "https://wa.me/9342653549",
       icon: Phone,
       className: "hover:text-green-400",
     },
     {
-      name: "Twitter",
-      href: "https://twitter.com",
-      icon: Twitter,
+      name: "Instagram",
+      href: "https://www.instagram.com/iam_devinson_official?igsh=MWYyNWJ3dDJvMTRhMg==",
+      icon: InstagramIcon,
       className: "hover:text-blue-400",
     },
     {
       name: "LinkedIn",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/chris-nikhil-6883ba290/",
       icon: Linkedin,
       className: "hover:text-blue-400",
     },
     {
       name: "GitHub",
-      href: "https://github.com",
+      href: "https://github.com/chrsnikhil",
       icon: Github,
       className: "hover:text-purple-400",
     },
     {
       name: "Email",
-      href: "mailto:contact@parkease.com",
+      href: "mailto:parkintoday26@gmail.com",
       icon: Mail,
       className: "hover:text-red-400",
     },
