@@ -1,0 +1,53 @@
+"use client"
+
+import { MapPin } from "lucide-react"
+import { PinContainer } from "./PinContainer"
+
+export default function LocationBar() {
+  return (
+    <section className="relative w-full bg-gray-800/30 backdrop-blur-sm py-20">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col items-center justify-center text-center">
+          <div className="mb-8 flex items-center gap-2">
+            <MapPin className="h-8 w-8 text-blue-400" />
+            <h2 className="text-3xl font-bold text-gray-100">Our Location</h2>
+          </div>
+
+          {/* Map Container */}
+          <div className="relative h-[450px] w-full overflow-hidden rounded-xl border border-gray-700 bg-gray-900/50">
+            {/* Placeholder Map - Replace with actual map integration */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50">
+              <PinContainer
+                title="ParkEase Location"
+                href="#"
+                containerClassName="w-full h-full"
+                className="w-full h-full flex items-center justify-center"
+              >
+                <div className="flex flex-col items-center gap-4">
+                  <MapPin className="h-16 w-16 text-blue-400" />
+                  <div className="rounded-lg bg-gray-800/80 px-6 py-3 text-lg text-gray-100">
+                    123 Parking Avenue, City Center
+                  </div>
+                </div>
+              </PinContainer>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div className="mt-8 flex flex-wrap justify-center gap-8 text-gray-300">
+            <div className="flex items-center gap-2">
+              <MapPin className="h-5 w-5 text-blue-400" />
+              <span>123 Parking Avenue, City Center</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-blue-400">Open 24/7</span>
+              <span>•</span>
+              <span>Contact: (555) 123-4567</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
