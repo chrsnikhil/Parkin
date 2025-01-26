@@ -33,7 +33,7 @@ export default function LocationBar() {
                   <div className="flex flex-col items-center gap-4">
                     <MapPin className="h-16 w-16 text-blue-400" />
                     <div className="rounded-lg bg-gray-800/80 px-6 py-3 text-lg text-gray-100">
-                      123 Parking Avenue, City Center
+                      Loyola ICAM College of Engineering and Technology
                     </div>
                   </div>
                 </div>
@@ -45,12 +45,12 @@ export default function LocationBar() {
           <div className="mt-8 flex flex-wrap justify-center gap-8 text-gray-300">
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 text-blue-400" />
-              <span>123 Parking Avenue, City Center</span>
+              <span>Loyola Campus, Nungambakkam</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-blue-400">Open 24/7</span>
+              <span className="text-blue-400">Details</span>
               <span>•</span>
-              <span>Contact: (555) 123-4567</span>
+              <span>Contact:+91 93426 53549</span>
             </div>
           </div>
         </div>
