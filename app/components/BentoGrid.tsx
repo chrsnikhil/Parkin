@@ -8,8 +8,8 @@ export default function BentoGrid() {
       icon: Clock,
     },
     {
-      title: "Easy Booking",
-      description: "Reserve your spot with just a few taps on our user-friendly app.",
+      title: "Easy Booking with NFC Cards",
+      description: "Reserve your spot with just a few taps on our user-friendly app and contactless NFC Cards.",
       icon: CreditCard,
     },
     {

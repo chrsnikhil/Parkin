@@ -1,35 +1,30 @@
 import { AnimatedTooltip } from "./AnimatedTooltip"
 
 const people = [
+  
   {
     id: 1,
-    name: "Therlaye",
-    designation: "THerla",
-    image: "/placeholder.svg?height=80&width=80",
+    name: "Shapari Iyyappan",
+    designation: "Media and Outreach",
+    image: "/shapari.png",
   },
   {
     id: 2,
-    name: "Blank",
-    designation: "THerla",
-    image: "/placeholder.svg?height=80&width=80",
+    name: "Devinson",
+    designation: "Marketing and Business Outreach",
+    image: "/devinson.jpg",
   },
   {
     id: 3,
-    name: "Devinson",
-    designation: "Marketing and Business Outreach",
-    image: "/placeholder.svg?height=80&width=80",
+    name: "Chris Nikhil",
+    designation: "Development and R&D",
+    image: "/Nikhil.jpg",
   },
   {
     id: 4,
-    name: "Chris Nikhil",
-    designation: "Development and R&D",
-    image: "/placeholder.svg?height=80&width=80",
-  },
-  {
-    id: 5,
     name: "Zenith Joshua",
     designation: "R&D",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/Zenith.png",
   },
 ]
 
