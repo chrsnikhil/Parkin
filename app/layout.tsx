@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import Sidebar from "./components/Sidebar"
-import { AuroraBackground } from "./components/AuroraBackground"
+import Sidebar from "./components/SideBar"
+import { BackgroundBeams } from "./components/ui/background-beams"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -18,16 +18,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-gray-950 text-gray-100`}>
-        <div className="relative min-h-screen overflow-hidden">
-          <AuroraBackground>
-            <div className="relative z-10">
-              <div className="flex">
-                <Sidebar />
-                <main className="flex-1 pl-16">{children}</main>
-              </div>
+      <body className={`${inter.className}`}>
+        <div className="relative min-h-screen bg-neutral-950">
+          <BackgroundBeams className="absolute inset-0" />
+          <div className="relative z-10">
+            <div className="flex min-h-screen">
+              <Sidebar />
+              <main className="flex-1 pl-16">
+                {children}
+              </main>
             </div>
-          </AuroraBackground>
+          </div>
         </div>
       </body>
     </html>
