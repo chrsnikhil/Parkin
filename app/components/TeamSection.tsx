@@ -3,32 +3,32 @@ import { AnimatedTooltip } from "./AnimatedTooltip"
 const people = [
   {
     id: 1,
-    name: "John Smith",
-    designation: "CEO & Founder",
+    name: "Therlaye",
+    designation: "THerla",
     image: "/placeholder.svg?height=80&width=80",
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    designation: "Operations Manager",
+    name: "Blank",
+    designation: "THerla",
     image: "/placeholder.svg?height=80&width=80",
   },
   {
     id: 3,
-    name: "Michael Chen",
-    designation: "Tech Lead",
+    name: "Devinson",
+    designation: "Marketing and Business Outreach",
     image: "/placeholder.svg?height=80&width=80",
   },
   {
     id: 4,
-    name: "Emma Davis",
-    designation: "Customer Relations",
+    name: "Chris Nikhil",
+    designation: "Development and R&D",
     image: "/placeholder.svg?height=80&width=80",
   },
   {
     id: 5,
-    name: "Alex Thompson",
-    designation: "Marketing Director",
+    name: "Zenith Joshua",
+    designation: "R&D",
     image: "/placeholder.svg?height=80&width=80",
   },
 ]
@@ -40,7 +40,7 @@ export default function TeamSection() {
         <div className="flex flex-col items-center justify-center text-center">
           <h2 className="mb-8 text-3xl font-bold text-gray-100 md:text-4xl">Meet Our Team</h2>
           <p className="mb-12 max-w-2xl text-gray-400">
-            Our dedicated team of parking professionals is committed to providing you with the best parking experience
+            Our team of enthusiastic students are committed to providing you with the best parking experience
             possible.
           </p>
           <div className="w-full max-w-3xl mx-auto">

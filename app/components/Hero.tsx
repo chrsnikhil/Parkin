@@ -13,6 +13,9 @@ export default function Hero() {
             <TypewriterEffect
               words={words}
               className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent"
+              typingSpeed={50}
+              deletingSpeed={30}
+              pauseDuration={1000}
             />
           </h1>
           <p className="mb-8 text-xl text-gray-300 md:text-2xl">
